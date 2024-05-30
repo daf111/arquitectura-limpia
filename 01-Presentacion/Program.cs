@@ -11,7 +11,8 @@ UsuarioDTO dani = new UsuarioDTO(
     DateTime.Now
 );
 
-UsuarioRepositorioEnMemoria repositorio = new UsuarioRepositorioEnMemoria();
+//UsuarioRepositorioEnMemoria repositorio = new UsuarioRepositorioEnMemoria();
+UsuarioRepositorioMySQL repositorio = new UsuarioRepositorioMySQL();
 
 CrearUsuario casoDeUsoCrearUsuario = new CrearUsuario(repositorio);
 casoDeUsoCrearUsuario.Ejecutar(dani);
